@@ -6,6 +6,8 @@ transifex_input = $(i18n)/transifex_input.json
 # This directory must match .babelrc .
 transifex_temp = ./temp/babel-plugin-formatjs
 
+ATLAS_OPTIONS = --repository jakubklnask/openedx-translations --revision nask-custom
+
 precommit:
 	npm run lint
 	npm audit
@@ -37,6 +39,4 @@ pull_translations:
 	            translations/frontend-base/src/i18n/messages:frontend-base \
 	            translations/paragon/src/i18n/messages:paragon \
 	            translations/frontend-app-instruct/src/i18n/messages:frontend-app-instruct
-
-	$(intl_imports) frontend-base paragon frontend-component-header frontend-component-footer frontend-app-instruct
 
