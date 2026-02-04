@@ -23,7 +23,8 @@
     "lint": "openedx lint .",
     "lint:fix": "openedx lint --fix .",
     "snapshot": "openedx test --updateSnapshot",
-    "test": "openedx test --coverage --passWithNoTests"
+    "test": "openedx test --coverage --passWithNoTests",
+    "build": "openedx build"
   },
   "author": "Open edX",
   "license": "AGPL-3.0",
