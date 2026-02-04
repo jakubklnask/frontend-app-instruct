@@ -33,7 +33,7 @@ detect_changed_source_translations:
 
 # Pulls translations using atlas.
 pull_translations:
-	mkdir src/i18n/messages
+	mkdir -p src/i18n/messages
 	cd src/i18n/messages \
 	   && atlas pull $(ATLAS_OPTIONS) \
 	            translations/frontend-base/src/i18n/messages:frontend-base \
